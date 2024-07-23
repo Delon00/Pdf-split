@@ -14,7 +14,7 @@ def split_pdf(input_pdf, output_folder):
 
 def get_file_and_folder():
     root = Tk()
-    root.withdraw()  # Cache la fenêtre principale de Tkinter
+    root.withdraw()
     input_pdf = filedialog.askopenfilename(title="Sélectionnez le fichier PDF à diviser", filetypes=[("PDF Files", "*.pdf")])
     output_folder = filedialog.askdirectory(title="Sélectionnez le dossier de sortie")
     return input_pdf, output_folder
